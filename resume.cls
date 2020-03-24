@@ -3,11 +3,14 @@
 \LoadClassWithOptions{article}
 
 \usepackage[left=0.4in, right=0.4in, top=0.6in, bottom=0.6in]{geometry}
-\usepackage{tabularx}
+\usepackage{ltablex}
+\keepXColumns
 \usepackage{multirow}
 
 \usepackage{xparse}
 \usepackage{etoolbox}
+
+\usepackage{environ}
 
 \usepackage{fontawesome} % font for special icons
 \thispagestyle{empty} % no page number
@@ -20,12 +23,12 @@
 %\usepackage{enumitem}
 %\setlist{nolistsep}
 
-\newenvironment{resumeheader} {
+\NewEnviron{resumeheader} {
   \centering
-  \tabularx{\textwidth}{ X r }
-} {
+  \begin{tabularx}{\textwidth}{ X r }
+    \BODY
   \vspace{1mm}
-  \endtabularx
+  \end{tabularx}
 }
 \newcommand{\name}[1]{\multirow{3}{*}{\textmd{\Huge \textsc{#1}}}}
 \newcommand{\headerinfo}[1]{& {\small #1} \\}
@@ -33,11 +36,11 @@
 \newcommand{\profiles}[1]{\headerinfo{#1}}
 \newcommand{\phonenumber}[1]{\headerinfo{#1}}
 
-\newenvironment{resumebody} {
+\NewEnviron{resumebody} {
   \centering
-  \tabularx{\textwidth}{ l >{\small}X >{\small}r }
-} {
-  \endtabularx
+  \begin{tabularx}{\textwidth}{ l >{\small}X >{\small}r }
+    \BODY
+  \end{tabularx}
 }
 
 \newcommand{\centercolumn}[1]{& #1} % write content to center column
