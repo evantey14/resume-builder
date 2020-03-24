@@ -58,12 +58,13 @@
     }
     \rightcolumn{#3}
 }
-\newcommand{\project}[2]{
-    % Args: project title, semicolon-separated list of details
-    \bigcolumn{
+\newcommand{\project}[3]{
+    % Args: project title, date, semicolon-separated list of details
+    \centercolumn{
         \textbf{#1}
-        \listdetails{#2}
+        \listdetails{#3}
     }
+    \rightcolumn{#2}
 }
 % List handling is tricky -- the following xparse & etoolbox code writes details to a bulleted list
 \NewDocumentCommand{\listdetails}{> {\SplitList {;}} m}{
