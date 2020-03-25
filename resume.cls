@@ -19,9 +19,8 @@
 %\usepackage{newtxtext} % good professional serif font
 %\usepackage[sfdefault,light]{roboto} % solid sans serif font
 
-% Uncomment to make more compact
-%\usepackage{enumitem}
-%\setlist{nolistsep}
+\usepackage{enumitem}
+\setlist{nolistsep}
 
 \NewEnviron{resumeheader} {
     \centering
