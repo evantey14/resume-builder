@@ -77,3 +77,4 @@
 \newcommand{\writedetail}[1]{
     \ifblank{#1}{}{\item #1}
 }
+\newcommand{\skills}[1]{\bigcolumn{#1}}
