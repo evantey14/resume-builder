@@ -24,15 +24,17 @@
 
 \NewEnviron{resumeheader} {
     \centering
-    \begin{tabularx}{\textwidth}{ X r }
+    \begin{tabularx}{\textwidth}{l >{\centering}X r}
         \BODY
     \end{tabularx}
 }
-\newcommand{\name}[1]{\multirow{3}{*}{\textmd{\Huge \textsc{#1}}}}
-\newcommand{\headerinfo}[1]{& {\small #1} \\}
-\newcommand{\email}[1]{\headerinfo{#1}}
-\newcommand{\profiles}[1]{\headerinfo{#1}}
-\newcommand{\phonenumber}[1]{\headerinfo{#1}}
+\newcommand{\name}[1]{\multirow{2}{*}{\textmd{\Huge \textsc{#1}}}}
+\newcommand{\centerheaderinfo}[1]{& #1}
+\newcommand{\rightheaderinfo}[1]{& #1 \\}
+\newcommand{\email}[1]{\centerheaderinfo{#1}}
+\newcommand{\phonenumber}[1]{\centerheaderinfo{#1}}
+\newcommand{\profiles}[1]{\rightheaderinfo{#1}}
+\newcommand{\website}[1]{\rightheaderinfo{#1}}
 
 \NewEnviron{resumebody} {
     \centering
