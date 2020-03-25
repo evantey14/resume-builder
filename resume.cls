@@ -13,7 +13,7 @@
 \usepackage{environ}
 
 \usepackage{fontawesome} % font for special icons
-\thispagestyle{empty} % no page number
+\pagestyle{empty} % no page numbers
 
 %\usepackage{gentium} % interesting "medieval" serif font
 %\usepackage{newtxtext} % good professional serif font
