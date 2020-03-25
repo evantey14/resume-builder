@@ -24,10 +24,10 @@
 %\setlist{nolistsep}
 
 \NewEnviron{resumeheader} {
-  \centering
-  \begin{tabularx}{\textwidth}{ X r }
-    \BODY
-  \end{tabularx}
+    \centering
+    \begin{tabularx}{\textwidth}{ X r }
+        \BODY
+    \end{tabularx}
 }
 \newcommand{\name}[1]{\multirow{3}{*}{\textmd{\Huge \textsc{#1}}}}
 \newcommand{\headerinfo}[1]{& {\small #1} \\}
@@ -36,10 +36,10 @@
 \newcommand{\phonenumber}[1]{\headerinfo{#1}}
 
 \NewEnviron{resumebody} {
-  \centering
-  \begin{tabularx}{\textwidth}{ l >{\small}X >{\small}r }
-    \BODY
-  \end{tabularx}
+    \centering
+    \begin{tabularx}{\textwidth}{ l >{\small}X >{\small}r }
+        \BODY
+    \end{tabularx}
 }
 
 \newcommand{\centercolumn}[1]{& #1} % write content to center column
@@ -71,7 +71,7 @@
 % List handling is tricky -- the following xparse & etoolbox code writes details to a bulleted list
 \NewDocumentCommand{\listdetails}{> {\SplitList {;}} m}{
     \begin{itemize}
-    \ProcessList {#1} {\writedetail}
+        \ProcessList {#1} {\writedetail}
     \end{itemize}
 }
 \newcommand{\writedetail}[1]{
