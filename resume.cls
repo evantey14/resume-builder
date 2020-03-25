@@ -27,7 +27,6 @@
   \centering
   \begin{tabularx}{\textwidth}{ X r }
     \BODY
-  \vspace{1mm}
   \end{tabularx}
 }
 \newcommand{\name}[1]{\multirow{3}{*}{\textmd{\Huge \textsc{#1}}}}
