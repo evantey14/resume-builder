@@ -1,56 +1,54 @@
 \documentclass{resume}
 
 \begin{document}
+    \begin{resumeheader}
+        \name{Evan Tey}
+        \email{tey@mit.edu}
+        \profiles{\faLinkedin  \space \faGithub \space evantey14}
+        \phonenumber{512--905--8664}
+        \website{evantey.me}
+    \end{resumeheader}
 
-\begin{resumeheader}
-    \name{Evan Tey}
-    \email{tey@mit.edu}
-    \profiles{\faLinkedin  \space \faGithub \space evantey14}
-    \phonenumber{512--905--8664}
-    \website{evantey.me}
-\end{resumeheader}
+    \begin{resumebody}
+        \sectiontitle{Education}
+            \school{Massachusetts Institute of Technology}
+            \degree{Candidate for M. Eng.}{Computer Science}{5.0/5.0}{June 2020}
+            \degree{B.S.}{Physics and Computer Science}{4.7/5.0}{June 2019}
 
-\begin{resumebody}
+        \sectiontitle{Experience}
+            \input{experiences/2020-spectra}
+            \input{experiences/2019-kensho}
+            \input{experiences/2019-projectinvent}
+            \input{experiences/2018-imperial}
+            \input{experiences/2018-nustar}
+            \input{experiences/2017-ool}
+            \input{experiences/2016-indeed}
+            \input{experiences/2015-hsmc}
+            \input{experiences/2014-hsmcresearch}
 
-    \sectiontitle{Education}
-        \school{Massachusetts Institute of Technology}
-        \degree{Candidate for M. Eng.}{Computer Science}{5.0/5.0}{June 2020}
-        \degree{B.S.}{Physics and Computer Science}{4.7/5.0}{June 2019}
+        \sectiontitle{Projects}
+            \input{projects/2018-vrt}
+            \input{projects/2016-consensus}
+            \input{projects/2016-align}
+            \input{projects/2016-crypto_cnn}
+            \input{projects/2016-3dscanner}
+            \input{projects/2015-proset}
+            \input{projects/2014-uil}
 
-    \sectiontitle{Experience}
-        \input{experiences/2020-spectra}
-        \input{experiences/2019-kensho}
-        \input{experiences/2019-projectinvent}
-        \input{experiences/2018-imperial}
-        \input{experiences/2018-nustar}
-        \input{experiences/2017-ool}
-        \input{experiences/2016-indeed}
-        \input{experiences/2015-hsmc}
-        \input{experiences/2014-hsmcresearch}
+        \sectiontitle{Activities}
+            \input{activities/2020-6042}
+            \input{activities/2019-spokes}
+            \input{activities/2019-esp}
+            \input{activities/2017-mathtutor}
+            \input{activities/2017-802}
+            \input{activities/2014-apcs}
+            \input{activities/2013-scratchcamp}
+            \input{awards/ioaa}
 
-    \sectiontitle{Projects}
-        \input{projects/2018-vrt}
-        \input{projects/2016-consensus}
-        \input{projects/2016-align}
-        \input{projects/2016-crypto_cnn}
-        \input{projects/2016-3dscanner}
-        \input{projects/2015-proset}
-        \input{projects/2014-uil}
-
-    \sectiontitle{Activities}
-        \input{activities/2020-6042}
-        \input{activities/2019-spokes}
-        \input{activities/2019-esp}
-        \input{activities/2017-mathtutor}
-        \input{activities/2017-802}
-        \input{activities/2014-apcs}
-        \input{activities/2013-scratchcamp}
-        \input{awards/ioaa}
-
-    \sectiontitle{Skills}
-        \skills{\textbf{Hard:} Python, Jupyter, Numpy, Pandas, Tensorflow, Git, Javascript, Node,
-        Java, Linux}
-        \skills{\textbf{Soft:} Leadership, Data Science, Design Thinking, Rapid Prototyping}
-        \skills{\textbf{Interests:} Stargazing, Education, Soccer, Food}
-\end{resumebody}
+        \sectiontitle{Skills}
+            \skills{Hard}{Python, Jupyter, Numpy, Pandas, Tensorflow, Git, Javascript, Node, Java,
+            Linux}
+            \skills{Soft}{Leadership, Data Science, Design Thinking, Rapid Prototyping}
+            \skills{Interests}{Stargazing, Education, Soccer, Food}
+    \end{resumebody}
 \end{document}
