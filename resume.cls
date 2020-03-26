@@ -3,7 +3,7 @@
 \LoadClassWithOptions{article}
 
 % Import libraries for environ/macro definition/processing
-\usepackage{environ}
+\usepackage{environ} % use instead of default for ltablex integration and code readability
 \usepackage{xparse}
 \usepackage{etoolbox}
 
