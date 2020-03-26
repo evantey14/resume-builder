@@ -24,8 +24,11 @@ can be referenced inside `LATEX_CODE` by `#1`, `#2`, etc. For example, some defi
 `\experience{PLACE/TITLE}{POSITION}{DATE}{DETAILS}`.
 
 Finally, I've placed my various positions, experiences, awards, etc. in folders, loaded by
-`\input{FILENAME}`. This keeps `resume.tex` clean and makes it easy to select which resume items to
-include.
+`\load[VERSION]{FILENAME}`, where the optional `VERSION` input loads specific versions of the item.
+For example in `projects/2016-consensus.tex`, I have a `designfocused` version for design-oriented
+applications and a general-purpose `default` version. Under the hood, this uses switch-case logic
+from the `xstring` package and a self-defined `\version` variable. Altogether, this keeps
+`resume.tex` clean and makes it easy to select which resume items to include.
 
 Don't be afraid of reading/editing `resume.cls` to understand the existing macros, make additional
 macros, adjust the table structure, or play with the formatting. Again, one of my goals is
