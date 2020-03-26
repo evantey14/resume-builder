@@ -6,6 +6,7 @@
 \usepackage{environ} % use instead of default for ltablex integration and code readability
 \usepackage{xparse}
 \usepackage{etoolbox}
+\usepackage{xstring}
 
 % Set up page format
 \usepackage[left=0.4in, right=0.4in, top=0.6in, bottom=0.6in]{geometry}
@@ -87,4 +88,11 @@
 }
 \newcommand{\writedetail}[1]{
     \ifblank{#1}{}{\item #1} % only add \item if argument isn't blank
+}
+
+% Load resume items from files
+\newcommand{\load}[2][default]{
+    % Args: version (optional, defaults to "default"), filename
+    \def\version{#1} % this variable can be used in the input file to select what code is used
+    \input{#2}
 }

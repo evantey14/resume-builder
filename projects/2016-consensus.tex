@@ -1,9 +1,19 @@
-\project
-    {Consensus}
-    {Spring `16}
-    {
-        Led a team of six through Design For America to create a live classroom tool which reduces
-        confusion through anonymous quetsions and various other features;
-        Developed a backend to track users, questions, and otehr confusion statistics using NodeJS,
-        socket.io, and MongoDB;
+\IfStrEqCase{\version}{
+    {designfocused}{
+        \project{Consensus}{Spring `16}
+            {
+                Used the design process to lead a team of six in creating a live classroom tool that
+                reduces confusion between students and teachers;
+                Interviewed teachers, then prototyped and tested several features before developing
+                a simple webapp to track users, questions, and confusion in the classroom;
+            }
+    }{default}{
+        \project{Consensus}{Spring `16}
+            {
+                Led a team of six through Design For America to create a live classroom tool which
+                reduces confusion through anonymous questions and other features;
+                Developed a backend to track users, questions, and other confusion statistics using
+                NodeJS, socket.io, and MongoDB;
+            }
     }
+}
