@@ -1,9 +1,16 @@
-\experience
-    {Project Invent}
-    {Winter Extern}
-    {Jan `19}
-    {
-        Worked at an early-stage non-profit to bring invention education to teachers and students
-        across the country;
-        Contributed to program design, strategy meetings, and fundraising development;
-    } 
+\IfStrEqCase{\version}{
+    {default}{
+        \experience{Project Invent}{Winter Extern}{Jan `19}
+            {
+                Worked at an early-stage non-profit to bring invention education to teachers and students
+                across the country;
+                Contributed to program design, strategy meetings, and fundraising development;
+            }
+    }{short}{
+        \experience{Project Invent}{Winter Extern}{Jan `19}
+            {
+                Worked at an early-stage non-profit to bring invention education to teachers and students
+                across the country through program design and strategy decision-making;
+            }
+    }
+}
