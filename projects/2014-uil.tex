@@ -1,9 +1,16 @@
-\project
-    {LASA UIL Study Site}
-    {Fall `14}
-    {
-        Developed a quizzing website to help novice CS students learn general programming
-        principles;
-        Parsed PDFs of computer science tests to a question database using MongoDB, Javascript,
-        NodeJS, Jade, and JQuery;
+\IfStrEqCase{\version}{
+    {short}{
+        \project{LASA UIL Study Site}{Fall `14}
+            {
+                Developed a quizzing site to help intro CS students practice programming;
+            }
+    }{default}{
+        \project{LASA UIL Study Site}{Fall `14}
+            {
+                Developed a quizzing website to help intro CS students learn general programming
+                principles;
+                Parsed PDFs of computer science tests to a question database using MongoDB,
+                Javascript, NodeJS, Jade, and JQuery;
+            }
     }
+}
